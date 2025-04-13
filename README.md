@@ -1,6 +1,6 @@
 # Example Monad SSE-based MCP Server built using Next.js
 
-## Usage
+## How to add new tools
 
 Update `app/mcp.ts` with your tools, prompts, and resources following the [MCP TypeScript SDK documentation](https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server).
 
@@ -17,4 +17,23 @@ Update `app/mcp.ts` with your tools, prompts, and resources following the [MCP T
 
 ```sh
 node scripts/test-client.mjs http://localhost:3000
+```
+
+## How to use the server
+
+Go to `Cursor > Settings > Cursor Settings > MCP`
+
+![add_mcp](/static/add_mcp.png)
+
+Paste the following in the `mcp.json` file
+
+```json
+{
+  "mcpServers": {
+    ...
+    "monad-mcp-sse": {
+      "url": "https://monad-mcp-sse-sandy.vercel.app/sse"
+    }
+  }
+}
 ```

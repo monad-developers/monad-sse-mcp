@@ -32,7 +32,7 @@ Paste the following in the `mcp.json` file
   "mcpServers": {
     ...
     "monad-mcp-sse": {
-      "url": "https://monad-mcp-sse-sandy.vercel.app/sse"
+      "url": "[your_app_vercel_url]/sse"
     }
   }
 }
